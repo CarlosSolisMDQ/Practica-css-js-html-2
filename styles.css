@@ -22,3 +22,24 @@ h2 {
     border-radius: 20px;
     background-color: rgba(100, 148, 237, 0.377);
 }
+
+/*esto de aca es para seleccionar el primer div y ahorrarse el ponerle una clase a cada uno*/
+
+div:nth-child(1) {
+    background-image: url(./img/scenic-view-of-mountains-against-sky-326235.jpg);
+    background-size: cover;
+}
+
+div:nth-child(2) {
+    background-color: dimgray;
+}
+
+div:nth-child(3) {
+    background-image: url(./img/green-fields-near-brown-mountain-210243.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div:nth-child(4) {
+    background-color: indianred;
+}
