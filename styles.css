@@ -4,6 +4,23 @@
     border: 0;
 }
 
+.nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0.24);
+    z-index: 0;
+    position: fixed;
+    border: 1px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav i {
+    padding: 0 50px;
+    font-size: 50px;
+}
+
 div {
     display: flex;
     align-items: center;
@@ -21,25 +38,33 @@ h2 {
     border: 1px solid black;
     border-radius: 20px;
     background-color: rgba(100, 148, 237, 0.377);
+    transition: 0.5s;
 }
 
-/*esto de aca es para seleccionar el primer div y ahorrarse el ponerle una clase a cada uno*/
 
-div:nth-child(1) {
+h2:hover {
+    padding: 60px 60px;
+    border: 2px solid black;
+}    
+
+/*esto de aca es para seleccionar el primer div y ahorrarse el ponerle una clase a cada uno*/
+/*pero hay que tener en cuenta que si hay un bloque que los antecede en dom o varios hay que contarlos en el orden*/
+div:nth-child(2) {
     background-image: url(./img/scenic-view-of-mountains-against-sky-326235.jpg);
     background-size: cover;
 }
 
-div:nth-child(2) {
+div:nth-child(3) {
     background-color: dimgray;
 }
 
-div:nth-child(3) {
+div:nth-child(4) {
     background-image: url(./img/green-fields-near-brown-mountain-210243.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
-div:nth-child(4) {
+div:nth-child(5) {
     background-color: indianred;
 }
+
