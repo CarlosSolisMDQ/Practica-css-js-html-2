@@ -7,7 +7,7 @@
 .nav {
     height: 100px;
     width: 100%;
-    background-color: rgba(137, 43, 226, 0.24);
+    background-color: rgba(255, 255, 255, 0.63);
     z-index: 0;
     position: fixed;
     border: 1px solid black;
@@ -78,7 +78,31 @@ div:nth-child(2) {
 }
 
 div:nth-child(3) {
-    background-color: dimgray;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(80px, auto);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.grid img {
+    max-width: 90%;
+    height: auto;
+    padding: 5px;
+    transition: 0.1s;
+}
+
+.grid img:hover {
+    transform: scale(0.95);
 }
 
 div:nth-child(4) {
