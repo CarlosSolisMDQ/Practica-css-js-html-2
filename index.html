@@ -9,8 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    </head>
+    <!--jquery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>    
+</head>
 <body>
+
+    
 
     <!--empiezo la pagina basandome en el efecto parallax simple que ense;an en el free code camp y desiste de usar alguna libreria como la de pixelcog, que es muy buena, pero prefiero entender como funciona el efecto por mi cuenta-->
     <nav class="nav">
@@ -43,18 +47,45 @@
         <a href="#"><i class="fab fa-facebook-square"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-"></i></a>
+        <a href="#"><i class="fab fa-youtube-square"></i></a>
     </div>
-    <div class="contacto" id="contacto" >
-        <h2>DIV 4</h2>
+    <div class="container" id="contacto" >
+        <h2 class="quotes">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</h2>
+        <h2 class="quotes">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur!"</h2>
+        <h2 class="quotes">"Lorem ipsum dolor sit amet."</h2>
+        <h2 class="quotes">"Lorem ipsum dolor sit amet consectetur adipisicing."</h2>
+        <h2 class="quotes">"Lorem ipsum dolor sit amet consectetur."</h2>
+        <h2 class="quotes">"Lorem ipsum, dolor sit amet consectetur adipisicing."</h2>
+        
     </div>
 
+<!--No me queda otra que poner esta funcion autoejecutable en el index porque si la llamo desde el main no funciona-->
 
+<!--
+<script>(function() {
+
+    var quotes = $(".quotes");
+    var quoteIndex = -1;
     
-   <script src="./main.js"></script>
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+    
+    showNextQuote();
+    
+})();</script>    
+-->  
+
+<!--Ya encontre por que no funciona el codigo de jquery en el archivo script externo, hay que habilitar el acceso file to file en chrome abriendolo con el comando " chrome.exe --allow-file-access-from-files "-->
+
+<script type="text/javascript" src="./main.js"></script>
 
    
-</script>
+
 
    
 </body>
