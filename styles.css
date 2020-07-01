@@ -157,8 +157,20 @@ div:nth-child(4) a i:hover {
 div:nth-child(5) {
     background-color: rgb(163, 163, 163);
     color: black;
+    display: flex;
+    flex-direction: column;
+    
 }
 
+div:nth-child(5) a i {
+    font-size: 50px;
+    padding: 40px;
+    
+}
+
+div:nth-child(5) a {
+    padding: 40px;
+}
 
 .quotes {
     display:none;
